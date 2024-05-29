@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import api from '../services/api';
+import UserList from '../components/UserList';
 
 function Home() {
   const [users, setUsers] = useState([]);
@@ -16,11 +16,7 @@ function Home() {
   return (
     <div>
       <h1>Home Page</h1>
-      <ul>
-        {users.map(user => (
-          <li key={user._id}>{user.name} - {user.email}</li>
-        ))}
-      </ul>
+      <UserList />
     </div>
   );
 }
