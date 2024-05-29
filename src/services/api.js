@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL
+  baseURL: 'https://enigmatic-peak-31224-722646e93474.herokuapp.com/api'
 });
 
 export const fetchUsers = async () => {
