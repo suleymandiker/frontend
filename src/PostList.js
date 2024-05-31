@@ -30,6 +30,9 @@ function PostList() {
               <span>Views: {post.views}</span>
             </div>
             <Link to={`/posts/${post._id}`}>Read More</Link>
+            <br/>
+            <Link to={`/edit/${post._id}`}>Edit</Link>
+
           </div>
         ))}
       </div>

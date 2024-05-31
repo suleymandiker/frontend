@@ -1,0 +1,41 @@
+.edit-post {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .edit-post h1 {
+    text-align: center;
+  }
+  
+  .edit-post form div {
+    margin-bottom: 15px;
+  }
+  
+  .edit-post form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .edit-post form input,
+  .edit-post form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .edit-post form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  

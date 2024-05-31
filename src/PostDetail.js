@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import './PostDetail.css';
+
 
 function PostDetail() {
   const { id } = useParams();
@@ -38,6 +39,8 @@ function PostDetail() {
         <span>Comments: {post.comments}</span>
         <span>Views: {post.views}</span>
       </div>
+      <Link to={`/edit/${post._id}`}>Edit</Link>
+   
     </div>
   );
 }
