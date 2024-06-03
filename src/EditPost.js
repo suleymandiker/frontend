@@ -12,7 +12,8 @@ function EditPost() {
     date: '',
     category: '',
     views: 0,
-    comments: 0
+    comments: 0,
+    image: '' // Yeni image alanı
   });
   const [loading, setLoading] = useState(true);
 
@@ -76,6 +77,10 @@ function EditPost() {
         <div>
           <label>Comments:</label>
           <input type="number" name="comments" value={post.comments} onChange={handleChange} />
+        </div>
+        <div>
+          <label>Image URL:</label>
+          <input type="text" name="image" value={post.image} onChange={handleChange} />
         </div>
         <button type="submit">Update Post</button>
       </form>

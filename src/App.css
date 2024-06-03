@@ -1,5 +1,11 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Suggestions {
+  margin-top: auto;
 }
 
 .App-logo {
@@ -40,17 +46,22 @@
 
 .posts-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 20px;
 }
 
+
 .post {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.post-image {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
 }
 
 .post h2 {
@@ -59,14 +70,14 @@
 
 .post-details {
   display: flex;
-  justify-content: space-between;
-  margin-top: 8px;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  padding: 20px;
+
 }
 
 
@@ -109,4 +120,31 @@
   justify-content: space-between;
   margin-top: 8px;
   color: #555;
+}
+
+.left-column {
+  flex: 70%;
+  padding: 20px;
+}
+
+.right-column {
+  flex: 30%;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.post-image {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 20px;
+  flex: 1;
 }

@@ -6,8 +6,7 @@ import EditPost from './EditPost';
 import './App.css';
 import Banner from './Banner';
 import Navbar from './Navbar';
-
-
+import Suggestions from './Suggestions';
 
 function App() {
   return (
@@ -16,13 +15,18 @@ function App() {
         <Banner />
         <Navbar />
         <div className="container">
-        <main className="main-content">
-        <Routes>
-          <Route path="/" element={<PostList />} />
-          <Route path="/posts/:id" element={<PostDetail />} />
-          <Route path="/edit/:id" element={<EditPost />} />
-        </Routes>
-        </main>
+          <div className="left-column">
+            <Routes>
+              <Route path="/" element={<PostList />} />
+              <Route path="/posts/:id" element={<PostDetail />} />
+              <Route path="/edit/:id" element={<EditPost />} />
+            </Routes>
+          </div>
+          <div className="right-column">
+   
+            <Suggestions />
+         
+          </div>
         </div>
       </div>
     </Router>
