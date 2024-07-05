@@ -1,22 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 import './Navbar.css';
+import Paginition from './Paginition';
+import Home from './Home';
+
+
+
 
 function Navbar() {
   return (
+    <div>
     <nav className="navbar">
       <ul>
-        <li><Link to="/">Gündelik</Link></li>
-        <li><Link to="/">Hikayeler</Link></li>
-        <li><Link to="/">Deneme</Link></li>
-        <li><Link to="/">Eleştiri</Link></li>
-        <li><Link to="/">Mizah</Link></li>
-        <li><Link to="/">Yaşam Ve İnsan</Link></li>
-        <li><Link to="/">Sinemaskop</Link></li>
-        <li><Link to="/">Araştırma</Link></li>
-        <li><Link to="/">Bloggess</Link></li>
+         <li><Link to="/">Home</Link></li>
+         <li><Link to="/pagination">Pagination</Link></li>
       </ul>
     </nav>
+    <Routes>
+    <Route path="/" element={<Home />} />
+          <Route path="/pagination" element={<Paginition />} />
+    </Routes>
+    </div>
+ 
   );
 }
 

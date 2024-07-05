@@ -1,150 +1,30 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.container > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
 }
 
-.Suggestions {
-  margin-top: auto;
+html, body {
+  background-color: #ffeead;
+  margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container > div:nth-child(1) {
+  background-color: #96ceb4;	
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container > div:nth-child(2) {
+  background-color: #ff6f69;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-.posts-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-
-.post {
-  display: flex;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.post-image {
-  width: 200px;
-  height: auto;
-  object-fit: cover;
-}
-
-.post h2 {
-  font-size: 1.5em;
-}
-
-.post-details {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
+.container > div:nth-child(3) {
+  background-color: #88d8b0;
 }
 
 .container {
+  border: 5px solid #ffcc5c;
   display: flex;
-  justify-content: center;
-
+  flex-direction: row;
 }
 
-
-.main-content {
-  flex: 3;
-  margin: 0 20px;
-}
-
-.banner {
-  text-align: center;
-}
-
-.banner-image {
-  width: 100%;
-  height: auto;
-}
-
-.post-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.post {
-  width: 100%;
-  max-width: 600px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.post h2 {
-  font-size: 1.5em;
-}
-
-.post-details {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 8px;
-  color: #555;
-}
-
-.left-column {
-  flex: 70%;
-  padding: 20px;
-}
-
-.right-column {
-  flex: 30%;
-  padding: 20px;
-}
-
-.sidebar {
-  background-color: #f4f4f4;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.post-image {
-  width: 200px;
-  height: auto;
-  object-fit: cover;
-}
-
-.post-content {
-  padding: 20px;
-  flex: 1;
-}

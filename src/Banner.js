@@ -1,11 +1,11 @@
 import React from 'react';
 import './Banner.css';
-import bannerImage from './A_website_banner_featuring_a_clean,_elegant_design.png';
+import bannerImage from './assets/images/bannerCover.png';
 
 function Banner() {
   return (
-    <div className="banner">
-      <img src={bannerImage} alt="Banner" className="banner-image" />
+    <div className="banner-container">
+      <img src={bannerImage} alt="Banner" className="banner-logo" />
     </div>
   );
 }

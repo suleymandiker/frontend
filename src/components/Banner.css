@@ -1,0 +1,13 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0F7FA;
+    padding: 20px;
+  }
+  
+  .banner img {
+    max-width: 100%;
+    height: auto;
+  }
+  

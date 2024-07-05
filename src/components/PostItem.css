@@ -1,0 +1,58 @@
+.post-item {
+    display: flex;
+    margin: 20px 0;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.2s;
+  }
+  
+  .post-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .post-image {
+    position: relative;
+    flex: 0 0 300px; /* Genişliği artırın */
+    margin-right: 20px;
+  }
+  
+  .post-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Kenarları yuvarlayın */
+  }
+  
+  .post-category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  
+  .post-content {
+    flex: 1;
+    padding: 10px 0;
+  }
+  
+  .post-content h2 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .post-content p {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .post-details {
+    display: flex;
+    gap: 15px;
+    color: #888;
+    font-size: 0.9em;
+  }
+  
